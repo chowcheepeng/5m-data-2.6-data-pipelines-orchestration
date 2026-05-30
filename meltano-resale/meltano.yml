@@ -1,0 +1,34 @@
+default_environment: dev
+project_id: 019e6259-537e-74e2-9fb1-6c0d58c4ea0d
+environments:
+- name: dev
+- name: staging
+- name: prod
+python: python3.11
+plugins:
+  extractors:
+  - name: tap-postgres
+    variant: meltanolabs
+    pip_url: meltanolabs-tap-postgres
+    config:
+      database: postgres
+      filter_schemas:
+      - public
+      host: aws-1-ap-northeast-2.pooler.supabase.com
+      port: 5432
+      user: postgres.hdsstnshkjzcccdaxlsb
+    select:
+    - public-resale_flat_prices_from_jan_2017.*
+  loaders:
+  - name: target-bigquery
+    variant: z3z1ma
+    pip_url: git+https://github.com/z3z1ma/target-bigquery.git setuptools<80
+    config:
+      batch_size: 104857600
+      credentials_path: /home/hlgra/diesel-monitor-496704-q5-768457bbb6d1.json
+      dataset: resale
+      denormalized: true
+      flattening_enabled: true
+      flattening_max_depth: 1
+      method: batch_job
+      project: diesel-monitor-496704-q5

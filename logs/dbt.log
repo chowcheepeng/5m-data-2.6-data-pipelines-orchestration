@@ -1,0 +1,30 @@
+[0m14:15:33.491684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a62b31b42d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a62b3223dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a62b61f3f10>]}
+
+
+============================== 14:15:33.498999 | 0947f598-7677-461c-b8ee-45c5a373d2a5 ==============================
+[0m14:15:33.498999 [info ] [MainThread]: Running with dbt=1.10.9
+[0m14:15:33.500161 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'profiles_dir': '/home/hlgra/.dbt', 'log_format': 'default', 'fail_fast': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'write_json': 'True', 'version_check': 'True', 'empty': 'None', 'log_cache_events': 'False', 'no_print': 'None', 'printer_width': '80', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_path': 'logs', 'invocation_command': 'dbt init resale_flat', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'debug': 'False', 'quiet': 'False'}
+[0m14:15:33.540420 [debug] [MainThread]: Starter project path: /home/hlgra/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:15:33.563652 [info ] [MainThread]: 
+Your new dbt project "resale_flat" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:15:33.564677 [info ] [MainThread]: Setting up your profile.
+[0m14:17:41.391462 [info ] [MainThread]: Profile resale_flat written to /home/hlgra/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:17:41.392679 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 122.21787, "process_in_blocks": "405944", "process_kernel_time": 8.149996, "process_mem_max_rss": "374824", "process_out_blocks": "80", "process_user_time": 11.615089}
+[0m14:17:41.393607 [debug] [MainThread]: Command `dbt init` succeeded at 14:17:41.393467 after 122.22 seconds
+[0m14:17:41.394157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a62b7bbff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a62b61f3f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a62b7a08510>]}
+[0m14:17:41.395241 [debug] [MainThread]: Flushing usage events
+[0m14:17:42.383399 [debug] [MainThread]: An error was encountered while trying to flush usage events
